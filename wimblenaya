@@ -4,17 +4,19 @@ local Window = Library.CreateLib("FijiHub", "Midnight")
 
 --Tabs
 local WimbleWord = Window:NewTab("WimbleWorld")
+local VMA = Window:NewTab("VMAs")
+local poma = Window:NewTab("Puma Event")
 local cREDIT = Window:NewTab("Credits")
 
 
 
---Guns
+--WimbleWord
 local xxxxp = WimbleWord:NewSection("Main")
 
 local xpbo = xxxxp:NewButton("Huge XP Boost (Needs To Be In A Match)", "oh damn", function ()
     local endmatch = game:GetService("ReplicatedStorage").Court_LeaveMatch
     game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
-    for x = 1,2000 do
+    for x = 1,3000 do
         endmatch:FireServer()
     end
 end)
@@ -34,8 +36,23 @@ local walk = xxxxp:NewToggle("Walkspeed", "", function (state)
     end   
 end)
 
---Misc
+--VMAS
+local vam = VMA:NewSection("Main")
 
+local pin = vam:NewButton("Get MTV Pin", "pin din min lim zim", function ()
+    local A_1 = "Charli XCX"
+local Event = game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.4.7"].knit.Services.VoteHandlerService.RF.RecieveVote
+Event:InvokeServer(A_1)
+end)
+
+--Puma
+local poo = poma:NewSection("Main")
+
+local cap = poma:NewButton("Get Cap" , "" , function ()
+local Event = game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.1.0-rc.1"].knit.Services.TutorialService["__comm__"].RF["_giveGifts"]
+Event:InvokeServer()
+
+end)
 
 --Credits
 local creator = cREDIT:NewSection("Creator: antgp#9689")
