@@ -14,7 +14,7 @@ local xxxxp = WimbleWord:NewSection("Main")
 local xpbo = xxxxp:NewButton("Huge XP Boost (Needs To Be In A Match)", "oh damn", function ()
     local endmatch = game:GetService("ReplicatedStorage").Court_LeaveMatch
     game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
-    for x = 1,3000 do
+    for x = 1,2000 do
         endmatch:FireServer()
     end
 end)
