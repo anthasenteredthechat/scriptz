@@ -50,7 +50,7 @@ end)
 --Puma
 local poo = poma:NewSection("Main")
 
-local cap = poma:NewButton("Get Cap" , "" , function ()
+local cap = poo:NewButton("Get Cap" , "" , function ()
 local Event = game:GetService("ReplicatedStorage").Packages["_Index"]["sleitnick_knit@1.1.0-rc.1"].knit.Services.TutorialService["__comm__"].RF["_giveGifts"]
 Event:InvokeServer()
 
