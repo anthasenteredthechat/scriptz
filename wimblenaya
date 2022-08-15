@@ -6,8 +6,10 @@ local Window = Library.CreateLib("FijiHub", "Midnight")
 local WimbleWord = Window:NewTab("WimbleWorld")
 local VMA = Window:NewTab("VMAs")
 local poma = Window:NewTab("Puma Event")
-local cREDIT = Window:NewTab("Credits")
+local CREDIT = Window:NewTab("Credits")
 
+
+local creator = CREDIT:NewSection("Creator: antgp#9689")
 
 
 --WimbleWord
@@ -55,4 +57,3 @@ Event:InvokeServer()
 end)
 
 --Credits
-local creator = cREDIT:NewSection("Creator: antgp#9689")
