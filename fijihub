@@ -3,14 +3,16 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("FijiHub", "Midnight")
 
 --Tabs
+local maine = Window:NewTab("Notes")
 local WimbleWord = Window:NewTab("WimbleWorld")
---local VMA = Window:NewTab("VMAs")
---local poma = Window:NewTab("Puma Event")
+local VMA = Window:NewTab("VMAs")
+local poma = Window:NewTab("Puma Event")
 local CREDIT = Window:NewTab("Credits")
 
+local miss = maine:NewSection("More events to be added soon!")
 
 local creator = CREDIT:NewSection("Creator: antgp#9689")
-
+local discord = creator:Section("Join Discord Server: TFaH9jBhSZ")
 
 --WimbleWord
 local xxxxp = WimbleWord:NewSection("Main")
@@ -39,7 +41,7 @@ local walk = xxxxp:NewToggle("Walkspeed", "", function (state)
 end)
 
 --VMAS
---[[local vam = VMA:NewSection("Main")
+local vam = VMA:NewSection("Main")
 
 local pin = vam:NewButton("Get MTV Pin", "pin din min lim zim", function ()
     local A_1 = "Charli XCX"
@@ -56,4 +58,4 @@ Event:InvokeServer()
 
 end)
 
---Credits]]
+--Credits
